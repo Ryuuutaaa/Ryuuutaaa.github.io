@@ -259,6 +259,37 @@ ul {
   margin-right: 15px;
 }
 
+/* dropdown */
+/* Menambahkan CSS untuk dropdown */
+.aside .nav li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-black-100);
+  padding: 10px 0;
+  width: 150px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.aside .nav li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.aside .nav li.dropdown .dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.aside .nav li.dropdown .dropdown-menu li a {
+  color: var(--text-black-900);
+  padding: 5px 15px;
+  display: block;
+}
+
+.aside .nav li.dropdown .dropdown-menu li a:hover {
+  color: var(--skin-color);
+}
+/* end dropdown */
+
 /* home */
 .home {
   min-height: 100vh;
@@ -379,38 +410,30 @@ h3.my-profession {
   margin-top: 40px;
 }
 
-/* Portofolio */
-.porotfolio .container {
-  padding-bottom: 40px;
-}
-.portofolio .portofolio-heading {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 40px;
+.about .skills .skill-item {
+  margin-bottom: 10px;
 }
 
-.portofolio .portofolio-heading h2 {
-  color: var(--text-black-900);
-  font-weight: 500;
+.about .skills .skill-name {
+    color: var(--text-black-700);
+
 }
 
-.portofolio .portofolio-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  margin-bottom: 30px;
-}
-
-.portofolio .portofolio-item-inner {
-  border: 6px solid var(--bg-black-100);
+.about .skills .skill-bar {
+  width: 100%;
+  background-color: #f1f1f1;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
 }
 
-.portofolio .portofolio-item-inner .portofolio-img img {
-  width: 100%;
-  display: block;
+.about .skills .skill-progress {
+  height: 20px;
+  background-color: var(--skin-color);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
 }
+
+
 
 /* responsife */
 @media (max-width: 1199px) {
